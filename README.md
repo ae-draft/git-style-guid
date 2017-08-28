@@ -1,19 +1,4 @@
-# Git Style Guide [RU]
-
-Переводы доступны на следующих языках:
-
-* [Chinese (Simplified)](https://github.com/aseaday/git-style-guide)
-* [Chinese (Traditional)](https://github.com/JuanitoFatas/git-style-guide)
-* [English](https://github.com/agis/git-style-guide)
-* [French](https://github.com/pierreroth64/git-style-guide)
-* [German](https://github.com/runjak/git-style-guide)
-* [Greek](https://github.com/grigoria/git-style-guide)
-* [Japanese](https://github.com/objectx/git-style-guide)
-* [Korean](https://github.com/ikaruce/git-style-guide)
-* [Portuguese](https://github.com/guylhermetabosa/git-style-guide)
-* [Thai](https://github.com/zondezatera/git-style-guide)
-* [Turkish](https://github.com/CnytSntrk/git-style-guide)
-* [Ukrainian](https://github.com/denysdovhan/git-style-guide)
+# Git Style Guide
 
 # Содержание
 
@@ -21,7 +6,7 @@
 2. [Коммиты](#Коммиты)
 3. [Сообщения](#Сообщения)
 4. [Объединение](#Объединение)
-5. [Другое...](#Другое)
+
 
 ## Ветки
 
@@ -55,12 +40,6 @@
   При желании можно объеденить персональную ветку с командной (см. ["Объединение"](#Объединение))
 
 * Удалите ветку после объединения, если не будете её использовать.
-
-  Совет: Находясь на ветке "master" в командной строке выполните следующую команду, чтобы получить список объединённых веток:
-
-  ```shell
-  $ git branch --merged | grep -v "\*"
-  ```
 
 ## Коммиты
 
@@ -136,8 +115,6 @@
   $ git commit --squash f387cab2
   ```
 
-  *(Совет: Используйте флаг --autosquash при перемещении. Отмеченные коммиты будут автоматически сквошены.)*
-
 ## Объединение
 
 * **Не переписывайте опубликованную историю.** История репозитория ценна сама по себе, и очень важно иметь возможность посмотреть всю историю. Если вы опубликуете изменённую историю, то это вызовет проблемы у тех кто уже работает с репозиторием.
@@ -163,11 +140,3 @@
   # плохо
   $ git merge my-branch
   ```
-
-## Другое...
-
-* Держите ваши репозитории в хорошей форме, иногда, выполняя задачи по обслуживанию (англ.):
-
-  * [`git-gc(1)`](https://git-scm.com/docs/git-gc)
-  * [`git-prune(1)`](https://git-scm.com/docs/git-prune)
-  * [`git-fsck(1)`](https://git-scm.com/docs/git-fsck)
